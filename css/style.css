@@ -159,7 +159,7 @@ img {
 
 }
 
-.hero__content p{
+.hero__content p {
     font-size: 2rem;
 }
 
@@ -495,4 +495,309 @@ img {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
+}
+
+
+
+
+
+/* project */
+
+
+/* cards */
+.cards {
+    margin-top: 5rem;
+}
+
+.cards .card__heading {
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards .card__heading span {
+    font-weight: 800;
+}
+
+
+
+
+.cards .card__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.cards {
+    background-color: #f6f5f5;
+}
+
+.card {
+    background-color: #fff;
+}
+
+.card .card__image {
+    aspect-ratio: 10 / 6;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.card__text {
+    position: absolute;
+    font-size: 2.4rem;
+    left: 1rem;
+    bottom: 1rem;
+    color: white;
+}
+
+
+
+.card__image1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+        url('/images/proyecto1.png');
+}
+
+.card__image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+        url('/images/proyecto2.png');
+}
+
+.card__image3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+        url('/images/proyecto3.png');
+}
+
+.card__image4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+        url('/images/proyecto4.png');
+}
+
+
+
+.card__body {
+    padding: 1rem;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__buttons .card__link {
+    background-color: #40407e;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+/* section estudies */
+
+.studies {
+    padding: 80px 0;
+}
+
+.grid__studies {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    justify-content: center;
+}
+
+.grid__studies .studies__text p {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #6c696d;
+}
+
+.studies__text .current {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.studies__text .current i {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+    .grid__studies {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid__studies .studies__text p {
+
+        font-weight: bold;
+    }
+}
+
+
+
+/* form  */
+.conatiner__form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.inform__form h4,
+.inform__form a {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .inform__form h4,
+    .inform__form a {
+        text-align: left;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .conatiner__form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.inform__form h4 {
+    font-size: 2.7rem;
+}
+
+
+.inform__form a {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #343a40;
+    font-weight: 700;
+    font-size: 1.8rem;
+
+
+
+}
+
+.inform__form a i {
+    font-size: 2rem;
+    color: #047e78;
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+.conatiner__form .campo,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 1.7rem;
+    border: 1px solid #c1c1c1;
+    margin-bottom: 1rem;
+    border-radius: .7rem;
+    outline: none;
+}
+
+.conatiner__form textarea {
+    width: 100%;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.conatiner__form form input[type="submit"] {
+    background: #047e78;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, .5);
+    font-size: 1.7rem;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .conatiner__form form input[type="submit"] {
+        width: 270px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* formulario  */
+
+
+.footer {
+    background-color: #e1dee7;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer__navbar a img {
+    width: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .footer__grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer__navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 24rem;
+
+    }
+    .footer__name p {
+    text-align: left;
+    }
+}
+
+
+
+.footer__navbar{
+    text-align: center;
+}
+
+
+.footer__navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
 }
