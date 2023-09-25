@@ -141,7 +141,7 @@ img {
 /* hero  */
 .hero {
     min-height: 50rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/16129724/pexels-photo-16129724/free-photo-of-hombre-trabajando-teclear-ordenador.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url('https://images.pexels.com/photos/16129724/pexels-photo-16129724/free-photo-of-hombre-trabajando-teclear-ordenador.jpeg?auto=compress&cs=tinysrgb&w=1600');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -159,8 +159,243 @@ img {
 
 }
 
-
+.hero__content p{
+    font-size: 2rem;
+}
 
 .logo {
     font-weight: bold;
+}
+
+
+
+
+/* habilidades */
+
+.skill__main {
+    margin-bottom: 4rem;
+}
+
+.skill__section img {
+    width: 30px;
+}
+
+.skill__head {
+    width: 100%;
+    margin-bottom: 7rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+}
+
+.skill__head h2 span {
+    color: #40407e;
+}
+
+@media (min-width: 768px) {
+
+    .skill__main {
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 14px;
+        column-gap: 25px;
+        ;
+    }
+}
+
+
+.skill__bar .inform {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.skill__bar .inform .d-flex {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5px;
+    margin-bottom: 7px;
+
+}
+
+.skill__bar .inform .d-flex span {
+    font-weight: bold;
+}
+
+.skill__bar .bar {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #c1c1c1;
+    border-radius: 25px;
+    margin-bottom: 2rem;
+
+}
+
+.skill__bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #c74d06;
+    border-radius: 25px;
+}
+
+.skill__bar .inform .percent {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* skill bar  */
+
+/* html  */
+.skill__bar .bar .html {
+    width: 90%;
+    animation: html 3s;
+}
+
+@keyframes html {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+
+}
+
+/* css  */
+.skill__bar .bar .css {
+    width: 85%;
+    animation: css 3s;
+}
+
+@keyframes css {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+
+}
+
+/* Javasvript  */
+.skill__bar .bar .Javasvript {
+    width: 75%;
+    animation: Javasvript 3s;
+}
+
+@keyframes Javasvript {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+
+}
+
+/* SChar  */
+.skill__bar .bar .cshar {
+    width: 67%;
+    animation: cshar 3s;
+}
+
+@keyframes cshar {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 67%;
+    }
+
+}
+
+/* react  */
+.skill__bar .bar .react {
+    width: 50%;
+    animation: react 3s;
+}
+
+@keyframes react {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+
+}
+
+
+/* bootstrap */
+.skill__bar .bar .bootstrap {
+    width: 70%;
+    animation: bootstrap 3s;
+}
+
+@keyframes bootstrap {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+
+}
+
+
+
+/* tailwind css */
+.skill__bar .bar .tailwind {
+    width: 57%;
+    animation: tailwind 3s;
+}
+
+@keyframes tailwind {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 57%;
+    }
+
+}
+
+/* tailwind css */
+.skill__bar .bar .normalize {
+    width: 89%;
+    animation: normalize 3s;
+}
+
+@keyframes normalize {
+
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 89%;
+    }
+
 }
