@@ -186,6 +186,9 @@ header{
 .skill__main {
     margin-bottom: 4rem;
 }
+.skill__section{
+    padding: 0 7rem;
+}
 
 .skill__section img {
     width: 30px;
@@ -212,7 +215,6 @@ header{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 14px;
         column-gap: 25px;
-        ;
     }
 }
 
@@ -720,11 +722,6 @@ header{
 }
 
 
-
-.form__imagen{
-    width: 400px;
-    height: auto;
-}
 
 
 
