@@ -69,54 +69,61 @@ img {
 
 
 /* header  */
-.top__header{
+.top__header {
     box-shadow: 0 3px 5px #e5e5e5;
     position: fixed;
     background-color: var(--white);
     left: 0;
     top: 0;
-    width:100% ;
+    width: 100%;
     z-index: 10;
 }
 
 
 
-.top__navbar{
+.top__navbar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.menu__icon--links{
-    display: flex;
-    align-items: center;
+.top__navbar .logo {
+    width: 80px;
+    margin-top: 1rem;
 }
 
-@media (min-width: 768px )  { 
-    .top__navbar{
-        display: flex; 
+@media (min-width: 768px) {
+    .top__navbar {
+        display: flex;
         justify-content: space-around;
         font-weight: 500;
         font-size: 1rem;
-        padding: 10px;
-     }
-    
-     .menu__icon--links{
+        padding: 1rem;
+    }
+
+    .menu__icon--links {
         display: flex;
-     }
- } 
+    }
+}
 
 
-.menu__items{
+.menu__items {
     display: flex;
+    flex-direction: column;
     align-items: center;
     list-style-type: none;
 }
-.menu__items li{
-    padding:0 15px ;
+
+.menu__items li {
+    padding: 0 .8rem;
 }
-.menu__items  a{
+
+.menu__icons a {
+    display: block;
+}
+
+.menu__items a {
     color: #525053;
     font-size: 1.5rem;
     font-weight: 500;
@@ -124,17 +131,43 @@ img {
     text-transform: uppercase;
 }
 
+.menu__items .menu__icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
 
-.menu__items .icon{
-    width: 27px;
-    max-width: 27px;
+.menu__items .icon {
+    width: 25px;
+    max-width: 25px;
     margin-right: 1rem;
 }
 
-@media (min-width: 768px )  { 
-    .top__navbar{
+@media (min-width: 768px) {
+    .top__navbar {
         display: flex;
         flex-direction: row;
+    }
+}
+
+.menu__links {
+    display: flex;
+}
+
+
+
+@media (min-width: 768px )  { 
+    .menu__items {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .top__navbar{
+        display: flex;
+        align-content: center;
+    }
+    .top__navbar .logo{
+        margin: 0;
     }
  } 
 
@@ -144,24 +177,23 @@ img {
 
 
 
-
-
-
-
-
-
 /* hero  */
 .hero {
-    min-height: 70rem;
+    min-height: 90rem;
     background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .5)), url('https://images.pexels.com/photos/16129724/pexels-photo-16129724/free-photo-of-hombre-trabajando-teclear-ordenador.jpeg?auto=compress&cs=tinysrgb&w=1600');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
-
     display: flex;
     align-items: center;
 
 }
+@media (min-width: 768px )  { 
+    .hero {
+        min-height: 70rem;
+        margin-bottom: 5rem;
+    }
+ } 
 
 .hero__content {
     /* border: 1px solid white; */
@@ -187,7 +219,8 @@ img {
 .skill__main {
     margin-bottom: 4rem;
 }
-.skill__section{
+
+.skill__section {
     padding: 0 7rem;
 }
 
@@ -755,19 +788,20 @@ img {
         width: 24rem;
 
     }
+
     .footer__name p {
-    text-align: left;
+        text-align: left;
     }
 }
 
 
 
-.footer__navbar{
+.footer__navbar {
     text-align: center;
 }
 
 
-.footer__navbar{
+.footer__navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -776,7 +810,7 @@ img {
     padding-bottom: 1rem;
 }
 
-.footer__name .name{
+.footer__name .name {
     color: black;
     font-weight: bold;
     text-transform: uppercase;
